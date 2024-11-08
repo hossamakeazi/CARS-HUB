@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAR HUB</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="myAudio" autoplay loop>
+        <source src="carmusic.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <script>
+        window.addEventListener("load", function() {
+          const audio = document.getElementById("myAudio");
+          audio.currentTime = 14; 
+          audio.play().catch(error => console.log("Autoplay bloqué par le navigateur"));
+        });
+    </script>
+    <div id="m2">
+        <h1 id="m3">Find Your Dream car</h1> 
+        <a href="CARS.html"><button id="m4">START</button></a>
+    </div>
+    <div id="m1"> 
+        <h1>Welcom To Cars Hub</h1>
+        <strong>To contact us by email:</strong>
+        <a href="mailto:hakeazi55@gmail.com">Click here</a>
+    </div>
+</body>
+</html>
